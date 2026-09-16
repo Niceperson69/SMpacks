@@ -1,4 +1,5 @@
-// Complete Translations (7 languages)
+// @ts-nocheck
+
 const translations = {
     en: {
         heroSubhead: "All shaders edited by Seiyant",
@@ -19,6 +20,10 @@ const translations = {
         noResultText: "No matching shaders",
         comingSoonTitle: "Modpacks Are Ready",
         comingSoonDesc: "Modpacks will be shared when we reach 2,000 followers.",
+        releaseKicker: "Upcoming Release",
+        releaseDescription: "These shaders will be released when the account reaches 4,000 followers.",
+        releaseFollowersText: "Release at 4,000 followers",
+        releaseBackText: "Back",
         langName: "EN",
         readBtn: "Read",
         closeBtn: "Close",
@@ -34,35 +39,39 @@ const translations = {
     },
     id: {
         heroSubhead: "Semua shader yang diedit oleh Seiyant",
-        modpackHeroSubhead: "Modpack yang dipake Seiyant",
+        modpackHeroSubhead: "Modpack yang digunakan oleh Seiyant",
         followLabel: "Ikuti TikTok →",
         donateTitle: "Dukung Seiyant",
-        donateSub: "Donasi via Sociabuzz →",
-        disclaimerText: "<p>Semua file shader di sini cuma hasil edit dari gw, Seiyant. Gw bukan pembuat asli shadernya dan nggak pernah ngaku sebagai dev aslinya. Gw cuman nyetting tampilannya biar sedikit lebih cakep & ringan. Semua hak cipta tetep milik developer asli shader tersebut.</p><p>Semua settingan shader itu gratis. Jadi jangan keluarin uang cuma buat beli settingan shader, respect sama developernya cuy.</p>",
-        modpackDisclaimerText: "Kalau ada error atau apa, bisa DM ke akun gw dan pastiin udah follow.",
+        donateSub: "Donasi melalui Sociabuzz →",
+        disclaimerText: "<p>Semua file shader di sini merupakan hasil edit yang dibuat oleh saya, Seiyant. Saya bukan pembuat asli shader tersebut dan tidak pernah mengklaim sebagai pembuatnya. Saya hanya menyesuaikan pengaturannya agar tampilannya lebih baik dan berjalan lebih ringan. Semua hak cipta tetap menjadi milik developer asli shader tersebut.</p><p>Semua pengaturan shader tersedia secara gratis. Oleh karena itu, tidak perlu mengeluarkan uang untuk membeli konfigurasi shader. Harap menghargai dan mendukung developer aslinya.</p>",
+        modpackDisclaimerText: "Jika terdapat error atau masalah, silakan kirim DM ke akun saya dan pastikan Anda sudah mengikuti akun tersebut.",
         modpackDisclaimerTitle: "Disclaimer",
         searchPlaceholder: "Cari file...",
         prevText: "Sebelumnya",
         nextText: "Selanjutnya",
-        pagePrefix: "Hal.",
+        pagePrefix: "Halaman",
         showingText: "Menampilkan",
         ofText: "dari",
         shadersText: "shader",
         noResultText: "Tidak ada shader yang cocok",
         comingSoonTitle: "Modpack Sudah Siap",
-        comingSoonDesc: "Modpack akan dibagikan saat mencapai 2.000 followers.",
+        comingSoonDesc: "Modpack akan dibagikan saat akun mencapai 2.000 followers.",
+        releaseKicker: "Segera Hadir",
+        releaseDescription: "Shader ini akan dirilis saat akun mencapai 4.000 followers.",
+        releaseFollowersText: "Rilis saat mencapai 4.000 followers",
+        releaseBackText: "Kembali",
         langName: "ID",
         readBtn: "Baca",
         closeBtn: "Tutup",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Utama",
-        modpack1Subtitle: "Ini modpack yang gw pake buat bikin konten Minecraft.",
+        modpack1Subtitle: "Ini adalah modpack yang saya gunakan untuk membuat konten Minecraft.",
         modpack2Title: "Modpack Utama (Frog Mod)",
-        modpack2Subtitle: "Modpack utama tapi gw tambahin Frog Mod (Ribbits).",
+        modpack2Subtitle: "Modpack utama dengan tambahan Frog Mod (Ribbits).",
         badgeMinecraft: "Minecraft : 1.21.1",
         badgePlatform: "Platform : Fabric Loader 0.19.2",
-        badgeBy: "by Seiyant"
+        badgeBy: "oleh Seiyant"
     },
     ph: {
         heroSubhead: "Lahat ng shader na na-edit ni Seiyant",
@@ -83,6 +92,10 @@ const translations = {
         noResultText: "Walang shader na tugma",
         comingSoonTitle: "Hand na ang mga Modpack",
         comingSoonDesc: "Ibabahagi ang mga modpack kapag umabot na sa 2,000 followers.",
+        releaseKicker: "Malapit nang I-release",
+        releaseDescription: "Ire-release ang mga shader na ito kapag umabot ang account sa 4,000 followers.",
+        releaseFollowersText: "I-release sa 4,000 followers",
+        releaseBackText: "Bumalik",
         langName: "Filipino",
         readBtn: "Basahin",
         closeBtn: "Isara",
@@ -115,6 +128,10 @@ const translations = {
         noResultText: "Không có shader phù hợp",
         comingSoonTitle: "Modpacks Đã Sẵn Sàng",
         comingSoonDesc: "Modpacks sẽ được chia sẻ khi đạt 2.000 người theo dõi.",
+        releaseKicker: "Sắp Ra Mắt",
+        releaseDescription: "Các shader này sẽ được phát hành khi tài khoản đạt 4.000 người theo dõi.",
+        releaseFollowersText: "Phát hành ở 4.000 người theo dõi",
+        releaseBackText: "Quay lại",
         langName: "Tiếng Việt",
         readBtn: "Đọc",
         closeBtn: "Đóng",
@@ -147,6 +164,10 @@ const translations = {
         noResultText: "Шейдеры не найдены",
         comingSoonTitle: "Модпаки Готовы",
         comingSoonDesc: "Модпаки будут доступны, когда наберём 2 000 подписчиков.",
+        releaseKicker: "Скорый Релиз",
+        releaseDescription: "Эти шейдеры будут выпущены, когда аккаунт достигнет 4 000 подписчиков.",
+        releaseFollowersText: "Релиз при 4 000 подписчиках",
+        releaseBackText: "Назад",
         langName: "Русский",
         readBtn: "Читать",
         closeBtn: "Закрыть",
@@ -179,6 +200,10 @@ const translations = {
         noResultText: "No hay shaders que coincidan",
         comingSoonTitle: "Modpacks Listos",
         comingSoonDesc: "Los modpacks se compartirán cuando lleguemos a 2,000 seguidores.",
+        releaseKicker: "Próximamente",
+        releaseDescription: "Estos shaders se lanzarán cuando la cuenta alcance los 4.000 seguidores.",
+        releaseFollowersText: "Lanzamiento a los 4.000 seguidores",
+        releaseBackText: "Volver",
         langName: "ES",
         readBtn: "Leer",
         closeBtn: "Cerrar",
@@ -211,6 +236,10 @@ const translations = {
         noResultText: "Nenhum shader correspondente",
         comingSoonTitle: "Modpacks Prontos",
         comingSoonDesc: "Os modpacks serão compartilhados quando alcançarmos 2.000 seguidores.",
+        releaseKicker: "Em Breve",
+        releaseDescription: "Esses shaders serão lançados quando a conta atingir 4.000 seguidores.",
+        releaseFollowersText: "Lançamento aos 4.000 seguidores",
+        releaseBackText: "Voltar",
         langName: "PT",
         readBtn: "Ler",
         closeBtn: "Fechar",
@@ -226,8 +255,23 @@ const translations = {
     }
 };
 
-// Shader Data with icon mapping
 const shadersData = [
+    {
+        title: "Derivative NeuPolished",
+        developer: "HaringPro",
+        editor: "Seiyant",
+        url: null,
+        releasePage: true,
+        icon: "imgs/neu.png"
+    },
+    {
+        title: "Derivative NeuPolished PBR ON!",
+        developer: "HaringPro",
+        editor: "Seiyant",
+        url: null,
+        releasePage: true,
+        icon: "imgs/neu.png"
+    },
    { 
         title: "BSL Refined II", 
         developer: "CaptTatsu", 
@@ -342,7 +386,6 @@ const shadersData = [
     }
 ];
 
-// Modpack Data
 const modpacksData = [
     { 
         titleKey: "modpack1Title",
@@ -366,7 +409,6 @@ let allShadersElements = [];
 let disclaimerExpanded = false;
 const ITEMS_PER_PAGE = 5;
 
-// Theme handling
 let isDarkMode = true;
 
 function toggleTheme() {
@@ -395,16 +437,15 @@ function loadTheme() {
     }
 }
 
-// Build shader elements with icons
 function buildShaderElements() {
     const container = document.getElementById('downloadList');
     container.innerHTML = '';
     allShadersElements = [];
     shadersData.forEach((shader, index) => {
         const item = document.createElement('a');
-        item.href = shader.url;
+        item.href = shader.releasePage ? '#release' : shader.url;
         item.className = 'download-item';
-        item.target = '_blank';
+        if (!shader.releasePage) item.target = '_blank';
         item.style.animationDelay = `${0.05 + (index * 0.05)}s`;
         item.innerHTML = `
             <img src="${shader.icon}" alt="${shader.title}" class="shader-icon" onerror="this.style.display='none'">
@@ -421,9 +462,18 @@ function buildShaderElements() {
         allShadersElements.push(item);
     });
     currentDisplayItems = [...allShadersElements];
+
+    allShadersElements.forEach((item, index) => {
+        const shader = shadersData[index];
+        if (shader && shader.releasePage) {
+            item.addEventListener('click', ( event) => {
+                event.preventDefault();
+                openShaderReleasePage(shader.title);
+            });
+        }
+    });
 }
 
-// Build modpack elements
 function buildModpackElements() {
     const container = document.getElementById('modpackList');
     container.innerHTML = '';
@@ -462,7 +512,6 @@ function buildModpackElements() {
     });
 }
 
-// Render page
 function renderPage() {
     const total = Math.ceil(currentDisplayItems.length / ITEMS_PER_PAGE);
     let page = currentPage;
@@ -502,7 +551,6 @@ function renderPage() {
     }
 }
 
-// Disclaimer toggle
 function toggleDisclaimer() {
     disclaimerExpanded = !disclaimerExpanded;
     const btn = document.getElementById('disclaimerReadBtn');
@@ -520,7 +568,6 @@ function toggleDisclaimer() {
     }
 }
 
-// Update header text
 function updateHeaderText() {
     const t = translations[currentLang];
     if (!t) return;
@@ -528,7 +575,6 @@ function updateHeaderText() {
     headerText.innerText = currentTab === 'shaders' ? t.headerShaders : t.headerModpacks;
 }
 
-// Update hero
 function updateHeroText() {
     const t = translations[currentLang];
     if (!t) return;
@@ -539,13 +585,13 @@ function updateHeroText() {
     }
 }
 
-// Apply language
-function applyLanguage(lang) {
+function applyLanguage( lang) {
     const t = translations[lang];
     if (!t) return;
     currentLang = lang;
     updateHeroText();
     updateHeaderText();
+    updateReleasePageText();
     document.getElementById('followLabel').innerText = t.followLabel;
     document.getElementById('donateTitle').innerHTML = t.donateTitle;
     document.getElementById('donateSub').innerText = t.donateSub;
@@ -575,8 +621,53 @@ function applyLanguage(lang) {
     localStorage.setItem('seiyantLang', lang);
 }
 
-// Switch tab
+function openShaderReleasePage( shaderTitle) {
+    const page = document.getElementById('shaderReleasePage');
+    const list = document.getElementById('downloadList');
+    const searchBox = document.querySelector('.search-box');
+    const paginationTop = document.getElementById('paginationTop');
+    const paginationBottom = document.getElementById('paginationBottom');
+    const paginationInfo = document.getElementById('paginationInfo');
+    const disclaimer = document.getElementById('disclaimerCard');
+
+    if (!page) return;
+
+    document.getElementById('releaseTitle').innerText = shaderTitle;
+    page.style.display = 'block';
+    list.style.display = 'none';
+    searchBox.style.display = 'none';
+    paginationTop.style.display = 'none';
+    paginationBottom.style.display = 'none';
+    paginationInfo.style.display = 'none';
+    disclaimer.style.display = 'none';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function closeShaderReleasePage() {
+    const page = document.getElementById('shaderReleasePage');
+    if (page) page.style.display = 'none';
+    switchTab('shaders');
+}
+
+function updateReleasePageText() {
+    const t = translations[currentLang];
+    if (!t) return;
+    const setText = ( id,  value) => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = value;
+    };
+    setText('releaseKicker', t.releaseKicker);
+    setText('releaseDescription', t.releaseDescription);
+    setText('releaseFollowersText', t.releaseFollowersText);
+    setText('releaseBackText', t.releaseBackText);
+}
+
 function switchTab(tab) {
+
+    const releasePage = document.getElementById('shaderReleasePage');
+    if (releasePage) releasePage.style.display = 'none';
+
     currentTab = tab;
     const shadersTab = document.getElementById('shadersTabBtn');
     const modpacksTab = document.getElementById('modpacksTabBtn');
@@ -625,8 +716,7 @@ function switchTab(tab) {
     }
 }
 
-// Search
-document.getElementById('searchInput').addEventListener('input', (e) => {
+document.getElementById('searchInput').addEventListener('input', ( e) => {
     if (currentTab !== 'shaders') return;
     const keyword = e.target.value.toLowerCase();
     currentDisplayItems = allShadersElements.filter(item => 
@@ -636,7 +726,6 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
     renderPage();
 });
 
-// Pagination
 function setupPagination() {
     const prevTop = document.getElementById('prevBtnTop');
     const nextTop = document.getElementById('nextBtnTop');
@@ -649,36 +738,34 @@ function setupPagination() {
     if (nextBottom) nextBottom.addEventListener('click', () => { const total = Math.ceil(currentDisplayItems.length / ITEMS_PER_PAGE); if (currentPage < total && currentTab === 'shaders') { currentPage++; renderPage(); } });
 }
 
-// Language popup
 function initLangPopup() {
     const langWrapper = document.getElementById('langPopupWrapper');
     const langBtn = document.getElementById('langBtn');
     
-    document.addEventListener('click', (e) => {
+    document.addEventListener('click', ( e) => {
         if (!langWrapper.contains(e.target)) langWrapper.classList.remove('active');
     });
     
-    langBtn.addEventListener('click', (e) => {
+    langBtn.addEventListener('click', ( e) => {
         e.stopPropagation();
         langWrapper.classList.toggle('active');
     });
     
     document.querySelectorAll('[data-lang]').forEach(opt => {
         opt.addEventListener('click', () => {
-            applyLanguage(opt.dataset.lang);
+            const lang = opt.dataset.lang;
+            if (!lang) return;
+            applyLanguage(lang);
             langWrapper.classList.remove('active');
         });
     });
 }
 
-// Theme toggle
 document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 
-// Tab buttons
 document.getElementById('shadersTabBtn')?.addEventListener('click', () => switchTab('shaders'));
 document.getElementById('modpacksTabBtn')?.addEventListener('click', () => switchTab('modpacks'));
 
-// Header logo click
 document.getElementById('headerLogo')?.addEventListener('click', () => {
     if (currentTab === 'shaders') {
         switchTab('modpacks');
@@ -687,10 +774,10 @@ document.getElementById('headerLogo')?.addEventListener('click', () => {
     }
 });
 
-// Disclaimer
+document.getElementById('releaseBackBtn')?.addEventListener('click', closeShaderReleasePage);
+
 document.getElementById('disclaimerReadBtn')?.addEventListener('click', toggleDisclaimer);
 
-// Initialize
 loadTheme();
 buildShaderElements();
 buildModpackElements();
