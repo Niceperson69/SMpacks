@@ -272,6 +272,13 @@ const shadersData = [
         releasePage: true,
         icon: "imgs/neu.png"
     },
+    { 
+        title: "Bliss Shaders", 
+        developer: "Xonk", 
+        editor: "Seiyant", 
+        url: "https://sfile.co/BlGp2PibcKO",
+        icon: "imgs/bli.png"
+    },
    { 
         title: "BSL Refined II", 
         developer: "CaptTatsu", 
