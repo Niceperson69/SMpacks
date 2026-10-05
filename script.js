@@ -298,7 +298,7 @@ const shadersData = [
         developer: "HaringPro",
         editor: "Seiyant",
         released: true,
-        url: "https://sfile.co/ywnW3uf0FnH",
+        url: "https://sfile.co/GsaA4qgwzJ7",
         icon: "imgs/neu.png",
         sourceUrl: "https://texture-packs.com/shaders/derivative/"
     },
