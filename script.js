@@ -27,6 +27,10 @@ const translations = {
         langName: "EN",
         readBtn: "Read",
         closeBtn: "Close",
+        detailBackText: "Back",
+        detailDownloadText: "Download",
+        detailSourceText: "Original Source",
+        detailInstallText: "The shader file is an edited .7z archive, so extract it first, then move the shader file into the shaderpacks folder in your Minecraft folder. If the shader has a configuration (.txt), move it together with the shader .zip file. For example, \"Skylumine Shaders.zip\" and \"Skylumine Shaders.zip.txt\". If the .txt file does not have the same name as the shader file, do not move it into the shaderpacks folder.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Main Modpack",
@@ -63,6 +67,10 @@ const translations = {
         langName: "ID",
         readBtn: "Baca",
         closeBtn: "Tutup",
+        detailBackText: "Kembali",
+        detailDownloadText: "Unduh",
+        detailSourceText: "Sumber Asli",
+        detailInstallText: "File shader ini adalah hasil edit dalam format .7z, jadi ekstrak terlebih dahulu lalu pindahkan file shader ke folder shaderpacks di folder Minecraft kalian. Jika shader memiliki konfigurasi (.txt), pindahkan juga bersamaan dengan file shader .zip. Contohnya \"Skylumine Shaders.zip\" dan \"Skylumine Shaders.zip.txt\". Jika nama file (.txt) tidak sama dengan nama file shader, jangan pindahkan file tersebut ke folder shaderpacks.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Utama",
@@ -99,6 +107,10 @@ const translations = {
         langName: "Filipino",
         readBtn: "Basahin",
         closeBtn: "Isara",
+        detailBackText: "Bumalik",
+        detailDownloadText: "I-download",
+        detailSourceText: "Orihinal na Source",
+        detailInstallText: "Ang shader file ay isang edited .7z archive, kaya i-extract muna ito at ilipat ang shader file sa shaderpacks folder sa Minecraft folder ninyo. Kung may configuration (.txt) ang shader, ilipat din ito kasama ng shader .zip file. Halimbawa, \"Skylumine Shaders.zip\" at \"Skylumine Shaders.zip.txt\". Kung hindi pareho ang pangalan ng .txt file at shader file, huwag itong ilipat sa shaderpacks folder.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Pangunahing Modpack",
@@ -135,6 +147,10 @@ const translations = {
         langName: "Tiếng Việt",
         readBtn: "Đọc",
         closeBtn: "Đóng",
+        detailBackText: "Quay lại",
+        detailDownloadText: "Tải xuống",
+        detailSourceText: "Nguồn Gốc",
+        detailInstallText: "File shader là bản chỉnh sửa ở định dạng .7z, vì vậy hãy giải nén trước rồi chuyển file shader vào thư mục shaderpacks trong thư mục Minecraft của bạn. Nếu shader có file cấu hình (.txt), hãy chuyển file đó cùng với shader .zip. Ví dụ: \"Skylumine Shaders.zip\" và \"Skylumine Shaders.zip.txt\". Nếu tên file (.txt) không giống tên file shader, không chuyển nó vào thư mục shaderpacks.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Chính",
@@ -171,6 +187,10 @@ const translations = {
         langName: "Русский",
         readBtn: "Читать",
         closeBtn: "Закрыть",
+        detailBackText: "Назад",
+        detailDownloadText: "Скачать",
+        detailSourceText: "Оригинальный источник",
+        detailInstallText: "Файл шейдера является отредактированным архивом .7z, поэтому сначала распакуйте его, затем переместите файл шейдера в папку shaderpacks в папке Minecraft. Если у шейдера есть конфигурация (.txt), переместите её вместе с файлом shader .zip. Например: \"Skylumine Shaders.zip\" и \"Skylumine Shaders.zip.txt\". Если имя файла (.txt) не совпадает с именем файла шейдера, не перемещайте его в папку shaderpacks.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Основной Модпак",
@@ -207,6 +227,10 @@ const translations = {
         langName: "ES",
         readBtn: "Leer",
         closeBtn: "Cerrar",
+        detailBackText: "Volver",
+        detailDownloadText: "Descargar",
+        detailSourceText: "Fuente original",
+        detailInstallText: "El archivo del shader es una edición en formato .7z, así que primero debes extraerlo y luego mover el archivo del shader a la carpeta shaderpacks de tu carpeta de Minecraft. Si el shader tiene una configuración (.txt), muévela también junto con el archivo shader .zip. Por ejemplo: \"Skylumine Shaders.zip\" y \"Skylumine Shaders.zip.txt\". Si el nombre del archivo (.txt) no coincide con el nombre del archivo del shader, no lo muevas a la carpeta shaderpacks.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Principal",
@@ -243,6 +267,10 @@ const translations = {
         langName: "PT",
         readBtn: "Ler",
         closeBtn: "Fechar",
+        detailBackText: "Voltar",
+        detailDownloadText: "Baixar",
+        detailSourceText: "Fonte original",
+        detailInstallText: "O arquivo do shader é uma edição em formato .7z, então extraia-o primeiro e depois mova o arquivo do shader para a pasta shaderpacks dentro da pasta do Minecraft. Se o shader tiver uma configuração (.txt), mova-a também junto com o arquivo shader .zip. Por exemplo: \"Skylumine Shaders.zip\" e \"Skylumine Shaders.zip.txt\". Se o nome do arquivo (.txt) não for igual ao nome do arquivo do shader, não o mova para a pasta shaderpacks.",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Principal",
@@ -260,136 +288,172 @@ const shadersData = [
         title: "Derivative NeuPolished",
         developer: "HaringPro",
         editor: "Seiyant",
-        url: null,
-        releasePage: true,
-        icon: "imgs/neu.png"
+        released: true,
+        url: "https://sfile.co/ywnW3uf0FnH",
+        icon: "imgs/neu.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/"
     },
     {
         title: "Derivative NeuPolished PBR ON!",
         developer: "HaringPro",
         editor: "Seiyant",
-        url: null,
-        releasePage: true,
-        icon: "imgs/neu.png"
+        released: true,
+        url: "https://sfile.co/ywnW3uf0FnH",
+        icon: "imgs/neu.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/"
     },
     { 
         title: "Bliss Shaders", 
         developer: "Xonk", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/BlGp2PibcKO",
-        icon: "imgs/bli.png"
+        icon: "imgs/bli.png",
+        sourceUrl: "https://modrinth.com/shader/bliss-shader",
     },
    { 
         title: "BSL Refined II", 
         developer: "CaptTatsu", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/VVtzNIKSCG2",
-        icon: "imgs/bsl.png"
+        icon: "imgs/bsl.png",
+        sourceUrl: "https://modrinth.com/shader/bsl-shaders",
     },
     { 
         title: "Derivative NEXT", 
         developer: "HaringPro", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/Im1nop0MVx5",
-        icon: "imgs/der.png"
+        icon: "imgs/der.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/",
     },
     { 
         title: "Derivative Polished", 
         developer: "HaringPro", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/YHtsYvg7jJv",
-        icon: "imgs/der.png"
+        icon: "imgs/der.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/",
     },
     { 
         title: "Comp Unbound Update", 
         developer: "EminGT", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/q7JvMkYV9Us",
-        icon: "imgs/com.png"
+        icon: "imgs/com.png",
+        sourceUrl: "https://modrinth.com/shader/complementary-unbound",
     },
     { 
         title: "New Mellow", 
         developer: "TheCMK", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/Pm2sLkQ3kjb",
-        icon: "imgs/mel.png"
+        icon: "imgs/mel.png",
+        sourceUrl: "https://modrinth.com/shader/mellow",
     },
     { 
         title: "Derivative 69 & V2", 
         developer: "HaringPro", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/FdcAvQBZGWg",
-        icon: "imgs/der.png"
+        icon: "imgs/der.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/",
     },
     { 
         title: "Derivative V3", 
         developer: "HaringPro", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/QeXp1QFan2w",
-        icon: "imgs/der.png"
+        icon: "imgs/der.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/",
     },
     { 
         title: "Derivative V4", 
         developer: "HaringPro", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/6PUVt0AUDVm",
-        icon: "imgs/der.png"
+        icon: "imgs/der.png",
+        sourceUrl: "https://texture-packs.com/shaders/derivative/",
     },
     { 
         title: "BSL Refined", 
         developer: "CaptTatsu", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/bgXaYQcO1o4",
-        icon: "imgs/bsl.png"
+        icon: "imgs/bsl.png",
+        sourceUrl: "https://modrinth.com/shader/bsl-shaders",
     },
     { 
         title: "E-LITE 5", 
         developer: "Entokito", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/Avw3evt0slw",
-        icon: "imgs/eli.png"
+        icon: "imgs/eli.png",
+        sourceUrl: "https://modrinth.com/shader/lite-shaders",
     },
     { 
         title: "E-LITE 5 (waving)", 
         developer: "Entokito", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/YzdJnIhUiQP",
-        icon: "imgs/eli.png"
+        icon: "imgs/eli.png",
+        sourceUrl: "https://modrinth.com/shader/lite-shaders",
     },
     { 
         title: "Super Duper Vanilla", 
         developer: "Eldestone", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/ZwCd3jKTV3t",
-        icon: "imgs/sdv.png"
+        icon: "imgs/sdv.png",
+        sourceUrl: "https://modrinth.com/shader/super-duper-vanilla",
     },
     { 
         title: "Complementary 5.2.2", 
         developer: "EminGT", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/jmDMTsy0pjo",
-        icon: "imgs/com.png"
+        icon: "imgs/com.png",
+        sourceUrl: "https://modrinth.com/shader/complementary-unbound",
     },
     { 
         title: "E-lite shader", 
         developer: "Entokito", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/SDvKahlqdQg",
-        icon: "imgs/eli.png"
+        icon: "imgs/eli.png",
+        sourceUrl: "https://modrinth.com/shader/lite-shaders",
     },
     { 
         title: "Mellow Fabulous Edit 2", 
         developer: "TheCMK", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/2pN23LCnyL7",
-        icon: "imgs/mel.png"
+        icon: "imgs/mel.png",
+        sourceUrl: "https://modrinth.com/shader/mellow",
     },
     { 
         title: "Skylumine", 
         developer: "MCbugsaddon", 
         editor: "Seiyant", 
+        released: true,
         url: "https://sfile.co/sCBK2OXMrgz",
-        icon: "imgs/sky.png"
+        icon: "imgs/sky.png",
+        sourceUrl: "https://www.curseforge.com/minecraft/shaders/skylumine-shaders",
     }
 ];
 
@@ -444,16 +508,39 @@ function loadTheme() {
     }
 }
 
+function slugify(value) {
+    return String(value)
+        .trim()
+        .replace(/&/g, 'and')
+        .replace(/[^a-z0-9]+/gi, '-')
+        .replace(/^-+|-+$/g, '')
+        .toLowerCase();
+}
+
+function getShaderId(shader) {
+    return `shader-${slugify(shader.title)}`;
+}
+
+function getModpackId(modpack) {
+    return `modpack-${slugify(modpack.titleKey)}`;
+}
+
 function buildShaderElements() {
     const container = document.getElementById('downloadList');
     container.innerHTML = '';
     allShadersElements = [];
+
     shadersData.forEach((shader, index) => {
         const item = document.createElement('a');
-        item.href = shader.releasePage ? '#release' : shader.url;
         item.className = 'download-item';
-        if (!shader.releasePage) item.target = '_blank';
         item.style.animationDelay = `${0.05 + (index * 0.05)}s`;
+
+        if (shader.released) {
+            item.href = `#${getShaderId(shader)}`;
+        } else {
+            item.href = '#release';
+        }
+
         item.innerHTML = `
             <img src="${shader.icon}" alt="${shader.title}" class="shader-icon" onerror="this.style.display='none'">
             <div class="item-content">
@@ -465,57 +552,56 @@ function buildShaderElements() {
             </div>
             <span class="material-symbols-outlined arrow-icon">chevron_right</span>
         `;
+
         container.appendChild(item);
         allShadersElements.push(item);
-    });
-    currentDisplayItems = [...allShadersElements];
 
-    allShadersElements.forEach((item, index) => {
-        const shader = shadersData[index];
-        if (shader && shader.releasePage) {
-            item.addEventListener('click', ( event) => {
-                event.preventDefault();
-                openShaderReleasePage(shader.title);
-            });
-        }
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            openItemPage('shader', shader);
+        });
     });
+
+    currentDisplayItems = [...allShadersElements];
 }
 
 function buildModpackElements() {
     const container = document.getElementById('modpackList');
     container.innerHTML = '';
     const t = translations[currentLang];
-    
+
     modpacksData.forEach((modpack, index) => {
         const item = document.createElement('a');
-        item.href = modpack.url;
+        item.href = `#${getModpackId(modpack)}`;
         item.className = 'download-item modpack-item';
-        item.target = '_blank';
         item.style.animationDelay = `${0.05 + (index * 0.05)}s`;
-        
+
         const title = t[modpack.titleKey] || modpack.titleKey;
         const subtitle = t[modpack.subtitleKey] || modpack.subtitleKey;
-        
+
         let badgesHTML = modpack.badges.map((badgeKey) => {
             const badgeText = t[badgeKey] || badgeKey;
-            if (badgeKey === "badgeBy") {
+            if (badgeKey === 'badgeBy') {
                 return `<div class="badge-row"><span class="meta-badge-new">${badgeText}</span></div>`;
             }
             return `<div class="badge-row"><span class="meta-badge">${badgeText}</span></div>`;
         }).join('');
-        
+
         item.innerHTML = `
             <img src="imgs/fabric.png" alt="Fabric" class="shader-icon modpack-icon" onerror="this.style.display='none'">
             <div class="item-content">
                 <div class="item-title modpack-title">${title}</div>
                 <div class="item-subtitle">${subtitle}</div>
-                <div class="badge-group">
-                    ${badgesHTML}
-                </div>
+                <div class="badge-group">${badgesHTML}</div>
             </div>
             <span class="material-symbols-outlined arrow-icon">chevron_right</span>
         `;
+
         container.appendChild(item);
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            openItemPage('modpack', modpack);
+        });
     });
 }
 
@@ -625,7 +711,93 @@ function applyLanguage( lang) {
     
     buildModpackElements();
     renderPage();
+    const currentDetail = findItemFromHash();
+    if (currentDetail) openItemPage(currentDetail.type, currentDetail.item, false);
     localStorage.setItem('seiyantLang', lang);
+}
+
+function findItemFromHash() {
+    const hash = window.location.hash.replace(/^#/, '');
+    if (!hash) return null;
+
+    const shader = shadersData.find(item => item.released && getShaderId(item) === hash);
+    if (shader) return { type: 'shader', item: shader };
+
+    const modpack = modpacksData.find(item => getModpackId(item) === hash);
+    if (modpack) return { type: 'modpack', item: modpack };
+
+    return null;
+}
+
+function openItemPage(type, item, updateHash = true) {
+    const page = document.getElementById('itemDetailPage');
+    if (!page || !item || (type === 'shader' ? !item.released : !item.url)) return;
+
+    const t = translations[currentLang] || translations.en;
+    const isShader = type === 'shader';
+    const id = isShader ? getShaderId(item) : getModpackId(item);
+    const title = isShader ? item.title : (t[item.titleKey] || item.titleKey);
+
+    if (updateHash && window.location.hash !== `#${id}`) {
+        history.pushState({ itemId: id }, '', `#${id}`);
+    }
+
+    setDetailVisibility(true);
+
+    const icon = document.getElementById('detailIcon');
+    const titleEl = document.getElementById('detailTitle');
+    const meta = document.getElementById('detailMeta');
+    const description = document.getElementById('detailDescription');
+    const actions = document.getElementById('detailActions');
+    const downloadBtn = document.getElementById('detailDownloadBtn');
+
+    icon.src = isShader ? item.icon : 'imgs/fabric.png';
+    icon.alt = title;
+    titleEl.innerText = title;
+
+    if (isShader) {
+        meta.style.display = 'inline-flex';
+        document.getElementById('detailDeveloper').innerText = item.developer;
+        document.getElementById('detailEditor').innerText = item.editor;
+        description.style.display = 'none';
+        const instructions = document.getElementById('detailInstructions');
+        instructions.innerText = t.detailInstallText || translations.en.detailInstallText;
+        instructions.style.display = 'block';
+    } else {
+        meta.style.display = 'none';
+        description.style.display = 'block';
+        description.innerText = t[item.subtitleKey] || item.subtitleKey;
+        const instructions = document.getElementById('detailInstructions');
+        instructions.style.display = 'none';
+        instructions.innerText = '';
+    }
+
+    actions.style.display = 'flex';
+    if (item.url) {
+        downloadBtn.href = item.url;
+        downloadBtn.removeAttribute('aria-disabled');
+        downloadBtn.style.pointerEvents = 'auto';
+        downloadBtn.style.opacity = '1';
+    } else {
+        downloadBtn.href = '#';
+        downloadBtn.setAttribute('aria-disabled', 'true');
+        downloadBtn.style.pointerEvents = 'none';
+        downloadBtn.style.opacity = '0.55';
+    }
+    document.getElementById('detailBackText').innerText = t.detailBackText || 'Back';
+    document.getElementById('detailDownloadText').innerText = t.detailDownloadText || 'Download';
+
+    const sourceBtn = document.getElementById('detailSourceBtn');
+    const sourceText = document.getElementById('detailSourceText');
+    if (isShader && item.sourceUrl) {
+        sourceBtn.href = item.sourceUrl;
+        sourceText.innerText = t.detailSourceText || 'Original Source';
+        sourceBtn.style.display = 'inline-flex';
+    } else {
+        sourceBtn.style.display = 'none';
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function openShaderReleasePage( shaderTitle) {
@@ -657,6 +829,42 @@ function closeShaderReleasePage() {
     switchTab('shaders');
 }
 
+function closeItemPage(updateHash = true) {
+    if (updateHash && window.location.hash) {
+        history.pushState({}, '', window.location.pathname + window.location.search);
+    }
+    const page = document.getElementById('itemDetailPage');
+    if (page) page.style.display = 'none';
+    switchTab(currentTab);
+}
+
+function setDetailVisibility(visible) {
+    const page = document.getElementById('itemDetailPage');
+    if (page) page.style.display = visible ? 'block' : 'none';
+
+    const list = document.getElementById('downloadList');
+    const modpackList = document.getElementById('modpackList');
+    const searchBox = document.querySelector('.search-box');
+    const paginationTop = document.getElementById('paginationTop');
+    const paginationBottom = document.getElementById('paginationBottom');
+    const paginationInfo = document.getElementById('paginationInfo');
+    const disclaimer = document.getElementById('disclaimerCard');
+    const modpackDisclaimer = document.getElementById('modpackDisclaimer');
+    const comingSoon = document.getElementById('comingSoonArea');
+
+    if (visible) {
+        list.style.display = 'none';
+        modpackList.style.display = 'none';
+        searchBox.style.display = 'none';
+        paginationTop.style.display = 'none';
+        paginationBottom.style.display = 'none';
+        paginationInfo.style.display = 'none';
+        disclaimer.style.display = 'none';
+        modpackDisclaimer.style.display = 'none';
+        comingSoon.style.display = 'none';
+    }
+}
+
 function updateReleasePageText() {
     const t = translations[currentLang];
     if (!t) return;
@@ -673,7 +881,9 @@ function updateReleasePageText() {
 function switchTab(tab) {
 
     const releasePage = document.getElementById('shaderReleasePage');
+    const detailPage = document.getElementById('itemDetailPage');
     if (releasePage) releasePage.style.display = 'none';
+    if (detailPage) detailPage.style.display = 'none';
 
     currentTab = tab;
     const shadersTab = document.getElementById('shadersTabBtn');
@@ -782,6 +992,16 @@ document.getElementById('headerLogo')?.addEventListener('click', () => {
 });
 
 document.getElementById('releaseBackBtn')?.addEventListener('click', closeShaderReleasePage);
+document.getElementById('detailBackBtn')?.addEventListener('click', () => closeItemPage(true));
+window.addEventListener('hashchange', () => {
+    const target = findItemFromHash();
+    if (target) openItemPage(target.type, target.item, false);
+    else {
+        const detailPage = document.getElementById('itemDetailPage');
+        if (detailPage) detailPage.style.display = 'none';
+        switchTab(currentTab);
+    }
+});
 
 document.getElementById('disclaimerReadBtn')?.addEventListener('click', toggleDisclaimer);
 
@@ -795,4 +1015,9 @@ const savedLang = localStorage.getItem('seiyantLang');
 if (savedLang && translations[savedLang]) applyLanguage(savedLang);
 else applyLanguage('en');
 
-switchTab('shaders');
+const initialHashItem = findItemFromHash();
+if (initialHashItem) {
+    currentTab = initialHashItem.type === 'modpack' ? 'modpacks' : 'shaders';
+}
+switchTab(currentTab);
+if (initialHashItem) openItemPage(initialHashItem.type, initialHashItem.item, false);
