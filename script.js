@@ -31,6 +31,13 @@ const translations = {
         detailDownloadText: "Download",
         detailSourceText: "Original Source",
         detailInstallText: "The shader file is an edited .7z archive, so extract it first, then move the shader file into the shaderpacks folder in your Minecraft folder. If the shader has a configuration (.txt), move it together with the shader .zip file. For example, \"Skylumine Shaders.zip\" and \"Skylumine Shaders.zip.txt\". If the .txt file does not have the same name as the shader file, do not move it into the shaderpacks folder.",
+        sortTitle: "Sort",
+        sortUploaded: "Upload date",
+        sortAlphabetical: "Alphabetical",
+        sortReverse: "Reverse",
+        listSizeTitle: "Items",
+        listSizeLabel: "Items per page",
+        downloadIconText: "Download Icon",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Main Modpack",
@@ -71,6 +78,13 @@ const translations = {
         detailDownloadText: "Unduh",
         detailSourceText: "Sumber Asli",
         detailInstallText: "File shader ini adalah hasil edit dalam format .7z, jadi ekstrak terlebih dahulu lalu pindahkan file shader ke folder shaderpacks di folder Minecraft kalian. Jika shader memiliki konfigurasi (.txt), pindahkan juga bersamaan dengan file shader .zip. Contohnya \"Skylumine Shaders.zip\" dan \"Skylumine Shaders.zip.txt\". Jika nama file (.txt) tidak sama dengan nama file shader, jangan pindahkan file tersebut ke folder shaderpacks.",
+        sortTitle: "Urutkan",
+        sortUploaded: "Tanggal upload",
+        sortAlphabetical: "Alfabet",
+        sortReverse: "Balik urutan",
+        listSizeTitle: "Jumlah",
+        listSizeLabel: "Jumlah per halaman",
+        downloadIconText: "Unduh Ikon",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Utama",
@@ -111,6 +125,13 @@ const translations = {
         detailDownloadText: "I-download",
         detailSourceText: "Orihinal na Source",
         detailInstallText: "Ang shader file ay isang edited .7z archive, kaya i-extract muna ito at ilipat ang shader file sa shaderpacks folder sa Minecraft folder ninyo. Kung may configuration (.txt) ang shader, ilipat din ito kasama ng shader .zip file. Halimbawa, \"Skylumine Shaders.zip\" at \"Skylumine Shaders.zip.txt\". Kung hindi pareho ang pangalan ng .txt file at shader file, huwag itong ilipat sa shaderpacks folder.",
+        sortTitle: "Ayusin",
+        sortUploaded: "Petsa ng upload",
+        sortAlphabetical: "Alpabetikal",
+        sortReverse: "Baliktad",
+        listSizeTitle: "Bilang",
+        listSizeLabel: "Bilang bawat pahina",
+        downloadIconText: "I-download ang Icon",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Pangunahing Modpack",
@@ -151,6 +172,13 @@ const translations = {
         detailDownloadText: "Tải xuống",
         detailSourceText: "Nguồn Gốc",
         detailInstallText: "File shader là bản chỉnh sửa ở định dạng .7z, vì vậy hãy giải nén trước rồi chuyển file shader vào thư mục shaderpacks trong thư mục Minecraft của bạn. Nếu shader có file cấu hình (.txt), hãy chuyển file đó cùng với shader .zip. Ví dụ: \"Skylumine Shaders.zip\" và \"Skylumine Shaders.zip.txt\". Nếu tên file (.txt) không giống tên file shader, không chuyển nó vào thư mục shaderpacks.",
+        sortTitle: "Sắp xếp",
+        sortUploaded: "Ngày tải lên",
+        sortAlphabetical: "Theo bảng chữ cái",
+        sortReverse: "Đảo ngược",
+        listSizeTitle: "Số lượng",
+        listSizeLabel: "Số lượng mỗi trang",
+        downloadIconText: "Tải biểu tượng",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Chính",
@@ -191,6 +219,13 @@ const translations = {
         detailDownloadText: "Скачать",
         detailSourceText: "Оригинальный источник",
         detailInstallText: "Файл шейдера является отредактированным архивом .7z, поэтому сначала распакуйте его, затем переместите файл шейдера в папку shaderpacks в папке Minecraft. Если у шейдера есть конфигурация (.txt), переместите её вместе с файлом shader .zip. Например: \"Skylumine Shaders.zip\" и \"Skylumine Shaders.zip.txt\". Если имя файла (.txt) не совпадает с именем файла шейдера, не перемещайте его в папку shaderpacks.",
+        sortTitle: "Сортировка",
+        sortUploaded: "Дата загрузки",
+        sortAlphabetical: "По алфавиту",
+        sortReverse: "Обратный порядок",
+        listSizeTitle: "Количество",
+        listSizeLabel: "На странице",
+        downloadIconText: "Скачать иконку",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Основной Модпак",
@@ -231,6 +266,13 @@ const translations = {
         detailDownloadText: "Descargar",
         detailSourceText: "Fuente original",
         detailInstallText: "El archivo del shader es una edición en formato .7z, así que primero debes extraerlo y luego mover el archivo del shader a la carpeta shaderpacks de tu carpeta de Minecraft. Si el shader tiene una configuración (.txt), muévela también junto con el archivo shader .zip. Por ejemplo: \"Skylumine Shaders.zip\" y \"Skylumine Shaders.zip.txt\". Si el nombre del archivo (.txt) no coincide con el nombre del archivo del shader, no lo muevas a la carpeta shaderpacks.",
+        sortTitle: "Ordenar",
+        sortUploaded: "Fecha de subida",
+        sortAlphabetical: "Alfabético",
+        sortReverse: "Invertir",
+        listSizeTitle: "Cantidad",
+        listSizeLabel: "Elementos por página",
+        downloadIconText: "Descargar icono",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Principal",
@@ -271,6 +313,13 @@ const translations = {
         detailDownloadText: "Baixar",
         detailSourceText: "Fonte original",
         detailInstallText: "O arquivo do shader é uma edição em formato .7z, então extraia-o primeiro e depois mova o arquivo do shader para a pasta shaderpacks dentro da pasta do Minecraft. Se o shader tiver uma configuração (.txt), mova-a também junto com o arquivo shader .zip. Por exemplo: \"Skylumine Shaders.zip\" e \"Skylumine Shaders.zip.txt\". Se o nome do arquivo (.txt) não for igual ao nome do arquivo do shader, não o mova para a pasta shaderpacks.",
+        sortTitle: "Ordenar",
+        sortUploaded: "Data de upload",
+        sortAlphabetical: "Alfabético",
+        sortReverse: "Inverter",
+        listSizeTitle: "Quantidade",
+        listSizeLabel: "Itens por página",
+        downloadIconText: "Baixar ícone",
         headerShaders: "Shaders",
         headerModpacks: "Modpacks",
         modpack1Title: "Modpack Principal",
@@ -286,6 +335,7 @@ const translations = {
 const shadersData = [
     {
         title: "Derivative NeuPolished",
+        uploadIndex: 0,
         developer: "HaringPro",
         editor: "Seiyant",
         released: true,
@@ -295,6 +345,7 @@ const shadersData = [
     },
     {
         title: "Derivative NeuPolished PBR ON!",
+        uploadIndex: 1,
         developer: "HaringPro",
         editor: "Seiyant",
         released: true,
@@ -304,6 +355,7 @@ const shadersData = [
     },
     { 
         title: "Bliss Shaders", 
+        uploadIndex: 2,
         developer: "Xonk", 
         editor: "Seiyant", 
         released: true,
@@ -313,6 +365,7 @@ const shadersData = [
     },
    { 
         title: "BSL Refined II", 
+        uploadIndex: 3,
         developer: "CaptTatsu", 
         editor: "Seiyant", 
         released: true,
@@ -322,6 +375,7 @@ const shadersData = [
     },
     { 
         title: "Derivative NEXT", 
+        uploadIndex: 4,
         developer: "HaringPro", 
         editor: "Seiyant", 
         released: true,
@@ -331,6 +385,7 @@ const shadersData = [
     },
     { 
         title: "Derivative Polished", 
+        uploadIndex: 5,
         developer: "HaringPro", 
         editor: "Seiyant", 
         released: true,
@@ -340,6 +395,7 @@ const shadersData = [
     },
     { 
         title: "Comp Unbound Update", 
+        uploadIndex: 6,
         developer: "EminGT", 
         editor: "Seiyant", 
         released: true,
@@ -349,6 +405,7 @@ const shadersData = [
     },
     { 
         title: "New Mellow", 
+        uploadIndex: 7,
         developer: "TheCMK", 
         editor: "Seiyant", 
         released: true,
@@ -358,6 +415,7 @@ const shadersData = [
     },
     { 
         title: "Derivative 69 & V2", 
+        uploadIndex: 8,
         developer: "HaringPro", 
         editor: "Seiyant", 
         released: true,
@@ -367,6 +425,7 @@ const shadersData = [
     },
     { 
         title: "Derivative V3", 
+        uploadIndex: 9,
         developer: "HaringPro", 
         editor: "Seiyant", 
         released: true,
@@ -376,6 +435,7 @@ const shadersData = [
     },
     { 
         title: "Derivative V4", 
+        uploadIndex: 10,
         developer: "HaringPro", 
         editor: "Seiyant", 
         released: true,
@@ -385,6 +445,7 @@ const shadersData = [
     },
     { 
         title: "BSL Refined", 
+        uploadIndex: 11,
         developer: "CaptTatsu", 
         editor: "Seiyant", 
         released: true,
@@ -394,6 +455,7 @@ const shadersData = [
     },
     { 
         title: "E-LITE 5", 
+        uploadIndex: 12,
         developer: "Entokito", 
         editor: "Seiyant", 
         released: true,
@@ -403,6 +465,7 @@ const shadersData = [
     },
     { 
         title: "E-LITE 5 (waving)", 
+        uploadIndex: 13,
         developer: "Entokito", 
         editor: "Seiyant", 
         released: true,
@@ -412,6 +475,7 @@ const shadersData = [
     },
     { 
         title: "Super Duper Vanilla", 
+        uploadIndex: 14,
         developer: "Eldestone", 
         editor: "Seiyant", 
         released: true,
@@ -421,6 +485,7 @@ const shadersData = [
     },
     { 
         title: "Complementary 5.2.2", 
+        uploadIndex: 15,
         developer: "EminGT", 
         editor: "Seiyant", 
         released: true,
@@ -430,6 +495,7 @@ const shadersData = [
     },
     { 
         title: "E-lite shader", 
+        uploadIndex: 16,
         developer: "Entokito", 
         editor: "Seiyant", 
         released: true,
@@ -439,6 +505,7 @@ const shadersData = [
     },
     { 
         title: "Mellow Fabulous Edit 2", 
+        uploadIndex: 17,
         developer: "TheCMK", 
         editor: "Seiyant", 
         released: true,
@@ -448,6 +515,7 @@ const shadersData = [
     },
     { 
         title: "Skylumine", 
+        uploadIndex: 18,
         developer: "MCbugsaddon", 
         editor: "Seiyant", 
         released: true,
@@ -460,12 +528,14 @@ const shadersData = [
 const modpacksData = [
     { 
         titleKey: "modpack1Title",
+        uploadIndex: 0,
         subtitleKey: "modpack1Subtitle",
         url: "https://sfile.co/0iVN6G8MPRD",
         badges: ["badgeMinecraft", "badgePlatform", "badgeBy"]
     },
     { 
         titleKey: "modpack2Title",
+        uploadIndex: 1,
         subtitleKey: "modpack2Subtitle",
         url: "https://sfile.co/cAVl3MaaGBW",
         badges: ["badgeMinecraft", "badgePlatform", "badgeBy"]
@@ -477,8 +547,11 @@ let currentPage = 1;
 let currentDisplayItems = [];
 let currentTab = 'shaders';
 let allShadersElements = [];
+let allModpackElements = [];
+let sortMode = 'uploaded';
+let sortReverse = false;
 let disclaimerExpanded = false;
-const ITEMS_PER_PAGE = 5;
+let itemsPerPage = 5;
 
 let isDarkMode = true;
 
@@ -525,21 +598,37 @@ function getModpackId(modpack) {
     return `modpack-${slugify(modpack.titleKey)}`;
 }
 
+function getSortTitle(item, type) {
+    if (type === 'modpack') {
+        const t = translations[currentLang] || translations.en;
+        return t[item.titleKey] || item.titleKey;
+    }
+    return item.title;
+}
+
+function sortData(data, type) {
+    const sorted = [...data];
+    sorted.sort((a, b) => {
+        if (sortMode === 'alphabetical') {
+            return getSortTitle(a, type).localeCompare(getSortTitle(b, type), undefined, { sensitivity: 'base' });
+        }
+        return (a.uploadIndex ?? 0) - (b.uploadIndex ?? 0);
+    });
+    if (sortReverse) sorted.reverse();
+    return sorted;
+}
+
 function buildShaderElements() {
     const container = document.getElementById('downloadList');
     container.innerHTML = '';
     allShadersElements = [];
 
-    shadersData.forEach((shader, index) => {
+    sortData(shadersData, 'shader').forEach((shader, index) => {
         const item = document.createElement('a');
         item.className = 'download-item';
         item.style.animationDelay = `${0.05 + (index * 0.05)}s`;
-
-        if (shader.released) {
-            item.href = `#${getShaderId(shader)}`;
-        } else {
-            item.href = '#release';
-        }
+        item.href = `#${getShaderId(shader)}`;
+        item._itemData = shader;
 
         item.innerHTML = `
             <img src="${shader.icon}" alt="${shader.title}" class="shader-icon" onerror="this.style.display='none'">
@@ -552,16 +641,13 @@ function buildShaderElements() {
             </div>
             <span class="material-symbols-outlined arrow-icon">chevron_right</span>
         `;
-
         container.appendChild(item);
         allShadersElements.push(item);
-
         item.addEventListener('click', (event) => {
             event.preventDefault();
             openItemPage('shader', shader);
         });
     });
-
     currentDisplayItems = [...allShadersElements];
 }
 
@@ -569,21 +655,20 @@ function buildModpackElements() {
     const container = document.getElementById('modpackList');
     container.innerHTML = '';
     const t = translations[currentLang];
+    allModpackElements = [];
 
-    modpacksData.forEach((modpack, index) => {
+    sortData(modpacksData, 'modpack').forEach((modpack, index) => {
         const item = document.createElement('a');
         item.href = `#${getModpackId(modpack)}`;
         item.className = 'download-item modpack-item';
         item.style.animationDelay = `${0.05 + (index * 0.05)}s`;
+        item._itemData = modpack;
 
         const title = t[modpack.titleKey] || modpack.titleKey;
         const subtitle = t[modpack.subtitleKey] || modpack.subtitleKey;
-
-        let badgesHTML = modpack.badges.map((badgeKey) => {
+        const badgesHTML = modpack.badges.map((badgeKey) => {
             const badgeText = t[badgeKey] || badgeKey;
-            if (badgeKey === 'badgeBy') {
-                return `<div class="badge-row"><span class="meta-badge-new">${badgeText}</span></div>`;
-            }
+            if (badgeKey === 'badgeBy') return `<div class="badge-row"><span class="meta-badge-new">${badgeText}</span></div>`;
             return `<div class="badge-row"><span class="meta-badge">${badgeText}</span></div>`;
         }).join('');
 
@@ -596,8 +681,8 @@ function buildModpackElements() {
             </div>
             <span class="material-symbols-outlined arrow-icon">chevron_right</span>
         `;
-
         container.appendChild(item);
+        allModpackElements.push(item);
         item.addEventListener('click', (event) => {
             event.preventDefault();
             openItemPage('modpack', modpack);
@@ -605,8 +690,114 @@ function buildModpackElements() {
     });
 }
 
+function normalizeSearchText(value) {
+    return String(value || '').toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+}
+
+function applySearch() {
+    if (currentTab !== 'shaders') return;
+    const input = document.getElementById('searchInput');
+    const keyword = normalizeSearchText(input?.value);
+
+    currentDisplayItems = allShadersElements.filter(item => {
+        const data = item._itemData || {};
+        const text = [data.title, data.developer, data.editor].map(normalizeSearchText).join(' ');
+        return text.includes(keyword);
+    });
+
+    currentPage = 1;
+    renderPage();
+}
+
+function applySort() {
+    buildShaderElements();
+    buildModpackElements();
+    currentPage = 1;
+    updateSortUI();
+    updateListSizeUI();
+    applySearch();
+}
+
+function updateSortUI() {
+    const t = translations[currentLang] || translations.en;
+    const btnText = document.getElementById('sortBtnText');
+    const uploaded = document.getElementById('sortUploadedText');
+    const alphabetical = document.getElementById('sortAlphabeticalText');
+    const reverse = document.getElementById('sortReverseText');
+    if (btnText) btnText.innerText = t.sortTitle || 'Sort';
+    if (uploaded) uploaded.innerText = t.sortUploaded || 'Upload date';
+    if (alphabetical) alphabetical.innerText = t.sortAlphabetical || 'Alphabetical';
+    if (reverse) reverse.innerText = sortReverse ? `${t.sortReverse || 'Reverse'} ✓` : (t.sortReverse || 'Reverse');
+    document.querySelectorAll('.sort-option[data-sort]').forEach(option => option.classList.toggle('active', option.dataset.sort === sortMode));
+    const reverseBtn = document.getElementById('sortReverseBtn');
+    if (reverseBtn) reverseBtn.classList.toggle('active', sortReverse);
+}
+
+function setupSort() {
+    const wrapper = document.getElementById('sortWrapper');
+    const btn = document.getElementById('sortBtn');
+    if (!wrapper || !btn) return;
+    btn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        wrapper.classList.toggle('active');
+    });
+    document.querySelectorAll('.sort-option[data-sort]').forEach(option => {
+        option.addEventListener('click', () => {
+            sortMode = option.dataset.sort;
+            sortReverse = false;
+            wrapper.classList.remove('active');
+            applySort();
+        });
+    });
+    document.getElementById('sortReverseBtn')?.addEventListener('click', () => {
+        sortReverse = !sortReverse;
+        wrapper.classList.remove('active');
+        applySort();
+    });
+    document.addEventListener('click', (event) => {
+        if (!wrapper.contains(event.target)) wrapper.classList.remove('active');
+    });
+    updateSortUI();
+}
+
+function updateListSizeUI() {
+    const btnText = document.getElementById('listSizeBtnText');
+    const wrapper = document.getElementById('listSizeWrapper');
+    const t = translations[currentLang] || translations.en;
+    if (btnText) btnText.innerText = itemsPerPage;
+    if (wrapper) wrapper.title = t.listSizeLabel || 'Items per page';
+    document.querySelectorAll('.list-size-option').forEach(option => {
+        option.classList.toggle('active', Number(option.dataset.size) === itemsPerPage);
+    });
+}
+
+function setupListSize() {
+    const wrapper = document.getElementById('listSizeWrapper');
+    const btn = document.getElementById('listSizeBtn');
+    if (!wrapper || !btn) return;
+    btn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        wrapper.classList.toggle('active');
+    });
+    document.querySelectorAll('.list-size-option').forEach(option => {
+        option.addEventListener('click', () => {
+            const size = Number(option.dataset.size);
+            if (![5, 10, 15].includes(size)) return;
+            itemsPerPage = size;
+            currentPage = 1;
+            wrapper.classList.remove('active');
+            updateListSizeUI();
+            if (currentTab === 'shaders') renderPage();
+        });
+    });
+    document.addEventListener('click', (event) => {
+        if (!wrapper.contains(event.target)) wrapper.classList.remove('active');
+    });
+    updateListSizeUI();
+}
+
 function renderPage() {
-    const total = Math.ceil(currentDisplayItems.length / ITEMS_PER_PAGE);
+    const total = Math.ceil(currentDisplayItems.length / itemsPerPage);
     let page = currentPage;
     if (page < 1) page = 1;
     if (page > total && total > 0) page = total;
@@ -615,8 +806,8 @@ function renderPage() {
     
     allShadersElements.forEach(el => el.style.display = 'none');
     
-    const start = (currentPage - 1) * ITEMS_PER_PAGE;
-    const end = start + ITEMS_PER_PAGE;
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
     for (let i = start; i < end && i < currentDisplayItems.length; i++) {
         currentDisplayItems[i].style.display = 'flex';
     }
@@ -710,7 +901,8 @@ function applyLanguage( lang) {
     }
     
     buildModpackElements();
-    renderPage();
+    updateSortUI();
+    applySearch();
     const currentDetail = findItemFromHash();
     if (currentDetail) openItemPage(currentDetail.type, currentDetail.item, false);
     localStorage.setItem('seiyantLang', lang);
@@ -786,6 +978,15 @@ function openItemPage(type, item, updateHash = true) {
     }
     document.getElementById('detailBackText').innerText = t.detailBackText || 'Back';
     document.getElementById('detailDownloadText').innerText = t.detailDownloadText || 'Download';
+
+    const iconBtn = document.getElementById('detailIconBtn');
+    const iconText = document.getElementById('detailIconText');
+    if (iconBtn) {
+        iconBtn.href = isShader ? item.icon : 'imgs/fabric.png';
+        iconBtn.download = (title || 'icon').replace(/[^a-z0-9]+/gi, '_').replace(/^_+|_+$/g, '') + '.png';
+        iconBtn.style.display = 'inline-flex';
+    }
+    if (iconText) iconText.innerText = t.downloadIconText || 'Download Icon';
 
     const sourceBtn = document.getElementById('detailSourceBtn');
     const sourceText = document.getElementById('detailSourceText');
@@ -933,15 +1134,7 @@ function switchTab(tab) {
     }
 }
 
-document.getElementById('searchInput').addEventListener('input', ( e) => {
-    if (currentTab !== 'shaders') return;
-    const keyword = e.target.value.toLowerCase();
-    currentDisplayItems = allShadersElements.filter(item => 
-        item.querySelector('.item-title').innerText.toLowerCase().includes(keyword)
-    );
-    currentPage = 1;
-    renderPage();
-});
+document.getElementById('searchInput')?.addEventListener('input', applySearch);
 
 function setupPagination() {
     const prevTop = document.getElementById('prevBtnTop');
@@ -950,9 +1143,9 @@ function setupPagination() {
     const nextBottom = document.getElementById('nextBtnBottom');
     
     if (prevTop) prevTop.addEventListener('click', () => { if (currentPage > 1 && currentTab === 'shaders') { currentPage--; renderPage(); } });
-    if (nextTop) nextTop.addEventListener('click', () => { const total = Math.ceil(currentDisplayItems.length / ITEMS_PER_PAGE); if (currentPage < total && currentTab === 'shaders') { currentPage++; renderPage(); } });
+    if (nextTop) nextTop.addEventListener('click', () => { const total = Math.ceil(currentDisplayItems.length / itemsPerPage); if (currentPage < total && currentTab === 'shaders') { currentPage++; renderPage(); } });
     if (prevBottom) prevBottom.addEventListener('click', () => { if (currentPage > 1 && currentTab === 'shaders') { currentPage--; renderPage(); } });
-    if (nextBottom) nextBottom.addEventListener('click', () => { const total = Math.ceil(currentDisplayItems.length / ITEMS_PER_PAGE); if (currentPage < total && currentTab === 'shaders') { currentPage++; renderPage(); } });
+    if (nextBottom) nextBottom.addEventListener('click', () => { const total = Math.ceil(currentDisplayItems.length / itemsPerPage); if (currentPage < total && currentTab === 'shaders') { currentPage++; renderPage(); } });
 }
 
 function initLangPopup() {
@@ -1009,6 +1202,8 @@ loadTheme();
 buildShaderElements();
 buildModpackElements();
 setupPagination();
+setupSort();
+setupListSize();
 initLangPopup();
 
 const savedLang = localStorage.getItem('seiyantLang');

@@ -107,6 +107,22 @@ body.light-mode .search-box .material-symbols-outlined {
     color: #3a2a24;
 }
 
+body.light-mode .sort-btn,
+body.light-mode .sort-menu {
+    background: #ede7e3;
+    border-color: rgba(58, 42, 36, 0.06);
+    color: #3a2a24;
+}
+
+body.light-mode .sort-option {
+    color: #3a2a24;
+}
+
+body.light-mode .sort-option:hover,
+body.light-mode .sort-option.active {
+    background: rgba(197, 181, 170, 0.15);
+}
+
 body.light-mode .download-item {
     background: #ede7e3;
     border-color: rgba(58, 42, 36, 0.06);
@@ -639,6 +655,184 @@ body.light-mode .support-icon .material-symbols-outlined {
     color: rgba(212, 197, 184, 0.20); 
 }
 
+.sort-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin: -6px 0 10px;
+    position: relative;
+    z-index: 20;
+}
+
+.sort-wrapper {
+    position: relative;
+}
+
+.sort-btn {
+    background: #2a1f1a;
+    border: 1px solid rgba(212, 197, 184, 0.05);
+    border-radius: 10px;
+    padding: 7px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #d4c5b8;
+    font: 500 13px inherit;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.sort-btn:hover {
+    background: rgba(212, 197, 184, 0.06);
+    border-color: #c5b5aa;
+}
+
+.sort-btn .material-symbols-outlined,
+.sort-option .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.sort-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 180px;
+    padding: 6px;
+    background: rgba(42, 31, 26, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 197, 184, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all 0.18s ease;
+}
+
+.sort-wrapper.active .sort-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sort-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 10px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #d4c5b8;
+    font: 500 13px inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.sort-option:hover,
+.sort-option.active {
+    background: rgba(212, 197, 184, 0.07);
+}
+
+.sort-reverse-option {
+    margin-top: 4px;
+    border-top: 1px solid rgba(212, 197, 184, 0.05);
+    border-radius: 0 0 8px 8px;
+}
+
+.modpacks-active .sort-bar {
+    display: flex;
+}
+
+.list-size-wrapper {
+    position: relative;
+}
+
+.list-size-btn {
+    background: #2a1f1a;
+    border: 1px solid rgba(212, 197, 184, 0.05);
+    border-radius: 10px;
+    padding: 7px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #d4c5b8;
+    font: 500 13px inherit;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.list-size-btn:hover {
+    background: rgba(212, 197, 184, 0.06);
+    border-color: #c5b5aa;
+}
+
+.list-size-btn .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.list-size-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 74px;
+    padding: 6px;
+    background: rgba(42, 31, 26, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 197, 184, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all 0.18s ease;
+    z-index: 30;
+}
+
+.list-size-wrapper.active .list-size-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.list-size-option {
+    width: 100%;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #d4c5b8;
+    font: 500 13px inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.list-size-option:hover,
+.list-size-option.active {
+    background: rgba(212, 197, 184, 0.07);
+}
+
+.list-size-wrapper + .pagination-control {
+    margin-top: 16px;
+}
+
+body.light-mode .list-size-btn,
+body.light-mode .list-size-menu {
+    background: #ede7e3;
+    border-color: rgba(58, 42, 36, 0.06);
+    color: #3a2a24;
+}
+
+body.light-mode .list-size-option {
+    color: #3a2a24;
+}
+
 .pagination-control {
     display: flex;
     justify-content: center;
@@ -703,6 +897,14 @@ body.light-mode .support-icon .material-symbols-outlined {
 .modpacks-active .search-box,
 .modpacks-active #disclaimerCard {
     display: none !important;
+}
+
+.detail-actions {
+    flex-wrap: wrap;
+}
+
+.detail-icon-btn {
+    text-decoration: none;
 }
 
 .download-list {

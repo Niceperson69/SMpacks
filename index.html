@@ -108,6 +108,40 @@
                 <input type="text" id="searchInput" placeholder="Search files...">
             </div>
 
+            <div class="sort-bar" id="sortBar">
+                <div class="sort-wrapper" id="sortWrapper">
+                    <button class="sort-btn" id="sortBtn" type="button">
+                        <span class="material-symbols-outlined">sort</span>
+                        <span id="sortBtnText">Sort</span>
+                    </button>
+                    <div class="sort-menu" id="sortMenu">
+                        <button class="sort-option active" type="button" data-sort="uploaded">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <span id="sortUploadedText">Upload date</span>
+                        </button>
+                        <button class="sort-option" type="button" data-sort="alphabetical">
+                            <span class="material-symbols-outlined">sort_by_alpha</span>
+                            <span id="sortAlphabeticalText">Alphabetical</span>
+                        </button>
+                        <button class="sort-option sort-reverse-option" id="sortReverseBtn" type="button">
+                            <span class="material-symbols-outlined">swap_vert</span>
+                            <span id="sortReverseText">Reverse</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-size-wrapper" id="listSizeWrapper">
+                    <button class="list-size-btn" id="listSizeBtn" type="button">
+                        <span class="material-symbols-outlined">view_list</span>
+                        <span id="listSizeBtnText">5</span>
+                    </button>
+                    <div class="list-size-menu" id="listSizeMenu">
+                        <button class="list-size-option active" type="button" data-size="5">5</button>
+                        <button class="list-size-option" type="button" data-size="10">10</button>
+                        <button class="list-size-option" type="button" data-size="15">15</button>
+                    </div>
+                </div>
+            </div>
+
             
             <div class="pagination-control" id="paginationTop">
                 <button class="page-btn" id="prevBtnTop"><span class="material-symbols-outlined">chevron_left</span> <span id="prevText">Prev</span></button>
@@ -180,6 +214,10 @@
                         <a class="detail-download-btn" id="detailDownloadBtn" href="#" target="_blank" rel="noopener">
                             <span class="material-symbols-outlined">download</span>
                             <span id="detailDownloadText">Download</span>
+                        </a>
+                        <a class="detail-download-btn detail-icon-btn" id="detailIconBtn" href="#" download>
+                            <span class="material-symbols-outlined">image</span>
+                            <span id="detailIconText">Download Icon</span>
                         </a>
                         <a class="detail-download-btn detail-source-btn" id="detailSourceBtn" href="#" target="_blank" rel="noopener" style="display: none;">
                             <span class="material-symbols-outlined">open_in_new</span>
