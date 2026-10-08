@@ -30,6 +30,7 @@ const translations = {
         detailBackText: "Back",
         detailDownloadText: "Download",
         detailSourceText: "Original Source",
+        downloadsTitle: "Downloads",
         detailInstallText: "The shader file is an edited .7z archive, so extract it first, then move the shader file into the shaderpacks folder in your Minecraft folder. If the shader has a configuration (.txt), move it together with the shader .zip file. For example, \"Skylumine Shaders.zip\" and \"Skylumine Shaders.zip.txt\". If the .txt file does not have the same name as the shader file, do not move it into the shaderpacks folder.",
         sortTitle: "Sort",
         sortUploaded: "Upload date",
@@ -77,6 +78,7 @@ const translations = {
         detailBackText: "Kembali",
         detailDownloadText: "Unduh",
         detailSourceText: "Sumber Asli",
+        downloadsTitle: "Download",
         detailInstallText: "File shader ini adalah hasil edit dalam format .7z, jadi ekstrak terlebih dahulu lalu pindahkan file shader ke folder shaderpacks di folder Minecraft kalian. Jika shader memiliki konfigurasi (.txt), pindahkan juga bersamaan dengan file shader .zip. Contohnya \"Skylumine Shaders.zip\" dan \"Skylumine Shaders.zip.txt\". Jika nama file (.txt) tidak sama dengan nama file shader, jangan pindahkan file tersebut ke folder shaderpacks.",
         sortTitle: "Urutkan",
         sortUploaded: "Tanggal upload",
@@ -123,7 +125,8 @@ const translations = {
         closeBtn: "Isara",
         detailBackText: "Bumalik",
         detailDownloadText: "I-download",
-        detailSourceText: "Orihinal na Source",
+        detailSourceText: "Mga Download",
+        downloadsTitle: "Mga Download",
         detailInstallText: "Ang shader file ay isang edited .7z archive, kaya i-extract muna ito at ilipat ang shader file sa shaderpacks folder sa Minecraft folder ninyo. Kung may configuration (.txt) ang shader, ilipat din ito kasama ng shader .zip file. Halimbawa, \"Skylumine Shaders.zip\" at \"Skylumine Shaders.zip.txt\". Kung hindi pareho ang pangalan ng .txt file at shader file, huwag itong ilipat sa shaderpacks folder.",
         sortTitle: "Ayusin",
         sortUploaded: "Petsa ng upload",
@@ -171,6 +174,7 @@ const translations = {
         detailBackText: "Quay lại",
         detailDownloadText: "Tải xuống",
         detailSourceText: "Nguồn Gốc",
+        downloadsTitle: "Tải xuống",
         detailInstallText: "File shader là bản chỉnh sửa ở định dạng .7z, vì vậy hãy giải nén trước rồi chuyển file shader vào thư mục shaderpacks trong thư mục Minecraft của bạn. Nếu shader có file cấu hình (.txt), hãy chuyển file đó cùng với shader .zip. Ví dụ: \"Skylumine Shaders.zip\" và \"Skylumine Shaders.zip.txt\". Nếu tên file (.txt) không giống tên file shader, không chuyển nó vào thư mục shaderpacks.",
         sortTitle: "Sắp xếp",
         sortUploaded: "Ngày tải lên",
@@ -218,6 +222,7 @@ const translations = {
         detailBackText: "Назад",
         detailDownloadText: "Скачать",
         detailSourceText: "Оригинальный источник",
+        downloadsTitle: "Скачивания",
         detailInstallText: "Файл шейдера является отредактированным архивом .7z, поэтому сначала распакуйте его, затем переместите файл шейдера в папку shaderpacks в папке Minecraft. Если у шейдера есть конфигурация (.txt), переместите её вместе с файлом shader .zip. Например: \"Skylumine Shaders.zip\" и \"Skylumine Shaders.zip.txt\". Если имя файла (.txt) не совпадает с именем файла шейдера, не перемещайте его в папку shaderpacks.",
         sortTitle: "Сортировка",
         sortUploaded: "Дата загрузки",
@@ -265,6 +270,7 @@ const translations = {
         detailBackText: "Volver",
         detailDownloadText: "Descargar",
         detailSourceText: "Fuente original",
+        downloadsTitle: "Descargas",
         detailInstallText: "El archivo del shader es una edición en formato .7z, así que primero debes extraerlo y luego mover el archivo del shader a la carpeta shaderpacks de tu carpeta de Minecraft. Si el shader tiene una configuración (.txt), muévela también junto con el archivo shader .zip. Por ejemplo: \"Skylumine Shaders.zip\" y \"Skylumine Shaders.zip.txt\". Si el nombre del archivo (.txt) no coincide con el nombre del archivo del shader, no lo muevas a la carpeta shaderpacks.",
         sortTitle: "Ordenar",
         sortUploaded: "Fecha de subida",
@@ -312,6 +318,7 @@ const translations = {
         detailBackText: "Voltar",
         detailDownloadText: "Baixar",
         detailSourceText: "Fonte original",
+        downloadsTitle: "Downloads",
         detailInstallText: "O arquivo do shader é uma edição em formato .7z, então extraia-o primeiro e depois mova o arquivo do shader para a pasta shaderpacks dentro da pasta do Minecraft. Se o shader tiver uma configuração (.txt), mova-a também junto com o arquivo shader .zip. Por exemplo: \"Skylumine Shaders.zip\" e \"Skylumine Shaders.zip.txt\". Se o nome do arquivo (.txt) não for igual ao nome do arquivo do shader, não o mova para a pasta shaderpacks.",
         sortTitle: "Ordenar",
         sortUploaded: "Data de upload",
@@ -340,6 +347,9 @@ const shadersData = [
         editor: "Seiyant",
         released: true,
         url: "https://sfile.co/ywnW3uf0FnH",
+        downloads: [
+            { name: "Derivative NeuPolished", url: "https://sfile.co/ywnW3uf0FnH" }
+        ],
         icon: "imgs/neu.png",
         sourceUrl: "https://texture-packs.com/shaders/derivative/"
     },
@@ -921,6 +931,56 @@ function findItemFromHash() {
     return null;
 }
 
+function getShaderDownloads(item) {
+    if (!item) return [];
+    if (Array.isArray(item.downloads) && item.downloads.length) return item.downloads;
+    if (item.url) return [{ name: item.title, url: item.url }];
+    return [];
+}
+
+function renderDetailDownloads(item, isShader) {
+    const section = document.getElementById('detailDownloads');
+    const list = document.getElementById('detailDownloadList');
+    if (!section || !list) return;
+
+    const t = translations[currentLang] || translations.en;
+    list.innerHTML = '';
+
+    if (!isShader) {
+        section.style.display = 'none';
+        return;
+    }
+
+    const downloads = getShaderDownloads(item);
+    if (!downloads.length) {
+        section.style.display = 'none';
+        return;
+    }
+
+    downloads.forEach((download, index) => {
+        if (!download || !download.url) return;
+        const row = document.createElement('div');
+        row.className = 'detail-download-item';
+
+        const name = document.createElement('span');
+        name.className = 'detail-download-name';
+        name.innerText = download.name || `${item.title}${index ? ` (${index + 1})` : ''}`;
+
+        const link = document.createElement('a');
+        link.className = 'detail-download-link';
+        link.href = download.url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.innerHTML = '<span class="material-symbols-outlined">download</span><span class="detail-download-link-text">' + (t.detailDownloadText || 'Download') + '</span>';
+
+        row.appendChild(name);
+        row.appendChild(link);
+        list.appendChild(row);
+    });
+
+    section.style.display = list.children.length ? 'block' : 'none';
+}
+
 function openItemPage(type, item, updateHash = true) {
     const page = document.getElementById('itemDetailPage');
     if (!page || !item || (type === 'shader' ? !item.released : !item.url)) return;
@@ -941,7 +1001,8 @@ function openItemPage(type, item, updateHash = true) {
     const meta = document.getElementById('detailMeta');
     const description = document.getElementById('detailDescription');
     const actions = document.getElementById('detailActions');
-    const downloadBtn = document.getElementById('detailDownloadBtn');
+    const sortBar = document.getElementById('sortBar');
+    if (sortBar) sortBar.style.display = 'none';
 
     icon.src = isShader ? item.icon : 'imgs/fabric.png';
     icon.alt = title;
@@ -965,19 +1026,21 @@ function openItemPage(type, item, updateHash = true) {
     }
 
     actions.style.display = 'flex';
-    if (item.url) {
-        downloadBtn.href = item.url;
-        downloadBtn.removeAttribute('aria-disabled');
-        downloadBtn.style.pointerEvents = 'auto';
-        downloadBtn.style.opacity = '1';
-    } else {
-        downloadBtn.href = '#';
-        downloadBtn.setAttribute('aria-disabled', 'true');
-        downloadBtn.style.pointerEvents = 'none';
-        downloadBtn.style.opacity = '0.55';
+
+    const downloadBtn = document.getElementById('detailDownloadBtn');
+    const downloadText = document.getElementById('detailDownloadText');
+    if (downloadBtn) {
+        if (isShader) {
+            downloadBtn.style.display = 'none';
+        } else {
+            downloadBtn.href = item.url || '#';
+            downloadBtn.style.display = item.url ? 'inline-flex' : 'none';
+        }
     }
+    if (downloadText) downloadText.innerText = t.detailDownloadText || 'Download';
+
     document.getElementById('detailBackText').innerText = t.detailBackText || 'Back';
-    document.getElementById('detailDownloadText').innerText = t.detailDownloadText || 'Download';
+    renderDetailDownloads(item, isShader);
 
     const iconBtn = document.getElementById('detailIconBtn');
     const iconText = document.getElementById('detailIconText');
@@ -1009,8 +1072,10 @@ function openShaderReleasePage( shaderTitle) {
     const paginationBottom = document.getElementById('paginationBottom');
     const paginationInfo = document.getElementById('paginationInfo');
     const disclaimer = document.getElementById('disclaimerCard');
+    const sortBar = document.getElementById('sortBar');
 
     if (!page) return;
+    if (sortBar) sortBar.style.display = 'none';
 
     document.getElementById('releaseTitle').innerText = shaderTitle;
     page.style.display = 'block';
@@ -1057,6 +1122,8 @@ function setDetailVisibility(visible) {
         list.style.display = 'none';
         modpackList.style.display = 'none';
         searchBox.style.display = 'none';
+        const sortBar = document.getElementById('sortBar');
+        if (sortBar) sortBar.style.display = 'none';
         paginationTop.style.display = 'none';
         paginationBottom.style.display = 'none';
         paginationInfo.style.display = 'none';
@@ -1111,6 +1178,8 @@ function switchTab(tab) {
         comingSoon.style.display = 'none';
         disclaimerCard.style.display = 'block';
         searchBox.style.display = 'flex';
+        const sortBar = document.getElementById('sortBar');
+        if (sortBar) sortBar.style.display = 'flex';
         paginationTop.style.display = 'flex';
         paginationBottom.style.display = 'flex';
         paginationInfo.style.display = 'block';

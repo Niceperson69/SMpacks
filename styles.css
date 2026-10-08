@@ -745,7 +745,7 @@ body.light-mode .support-icon .material-symbols-outlined {
 }
 
 .modpacks-active .sort-bar {
-    display: flex;
+    display: none !important;
 }
 
 .list-size-wrapper {
@@ -1313,6 +1313,79 @@ body.light-mode .detail-description { color: rgba(58,42,36,0.60); }
 body.light-mode .detail-install-instructions { color: rgba(58,42,36,0.56); }
 body.light-mode .detail-download-btn { background: rgba(58,42,36,0.04); border-color: rgba(58,42,36,0.07); color: #3a2a24; }
 body.light-mode .detail-download-btn:hover { background: rgba(197,181,170,0.15); border-color: #c5b5aa; }
+
+.detail-downloads {
+    width: 100%;
+    max-width: 620px;
+    margin: 24px auto 0;
+    text-align: left;
+}
+.detail-download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.detail-download-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 42px;
+    padding: 7px 9px 7px 13px;
+    border: 1px solid rgba(212,197,184,0.06);
+    border-radius: 11px;
+    background: rgba(212,197,184,0.025);
+}
+.detail-download-name {
+    min-width: 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    color: rgba(212,197,184,0.78);
+    font-size: 12px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+.detail-download-link {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 32px;
+    padding: 6px 11px;
+    border-radius: 9px;
+    border: 1px solid rgba(212,197,184,0.07);
+    background: rgba(212,197,184,0.05);
+    color: #d4c5b8;
+    text-decoration: none;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+.detail-download-link .material-symbols-outlined { font-size: 16px; }
+.detail-download-link:hover {
+    background: rgba(197,181,170,0.10);
+    border-color: rgba(197,181,170,0.16);
+    transform: translateY(-1px);
+}
+body.light-mode .detail-download-item {
+    border-color: rgba(58,42,36,0.06);
+    background: rgba(58,42,36,0.025);
+}
+body.light-mode .detail-download-name { color: rgba(58,42,36,0.70); }
+body.light-mode .detail-download-link {
+    background: rgba(58,42,36,0.04);
+    border-color: rgba(58,42,36,0.07);
+    color: #3a2a24;
+}
+body.light-mode .detail-download-link:hover { background: rgba(197,181,170,0.15); border-color: #c5b5aa; }
+
+@media (max-width: 520px) {
+    .detail-download-item { align-items: stretch; }
+    .detail-download-link { padding-left: 9px; padding-right: 9px; }
+}
 
 .shader-release-page {
     animation: fadeUp 0.4s ease-out;
